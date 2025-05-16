@@ -1,0 +1,77 @@
+/* Import font JetBrains Mono dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+
+/* Reset dan pengaturan awal box model */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling untuk body halaman */
+body {
+  min-height: 100vh; /* Memastikan tinggi minimum halaman setinggi viewport */
+  background: url('https://windowscustomization.com/wp-content/uploads/2018/12/Anime-And-Scape-Watefal.gif') no-repeat center center fixed; /* Gambar latar belakang animasi */
+  background-size: cover; /* Memastikan gambar menutupi seluruh layar */
+  font-family: 'JetBrains Mono', monospace; /* Menggunakan font monospaced */
+  position: relative; /* Untuk positioning elemen di dalamnya */
+  overflow: hidden; /* Menghindari scroll bar */
+}
+
+/* Kontainer utama tempat teks otomatis muncul */
+.tempat-nulis {
+  position: absolute;
+  top: 45%; /* Menempatkan elemen di 45% dari atas halaman */
+  left: 50%; /* Tengah horizontal */
+  transform: translate(-50%, -50%); /* Benar-benar memusatkan elemen */
+  background-color: rgba(0, 0, 0, 0.7); /* Latar belakang gelap semi transparan */
+  padding: 20px; /* Ruang dalam */
+  border-radius: 20px; /* Sudut membulat */
+  text-align: center; /* Teks rata tengah */
+  color: white; /* Warna teks putih */
+  box-shadow: 0 0 25px 8px rgba(255, 180, 255, 10); /* Efek neon abu-abu ungu terang */
+}
+
+/* Ukuran font untuk teks yang diketik */
+.auto-text {
+  font-size: 28px;
+}
+
+/* Kotak input pengatur kecepatan */
+.kecepatan {
+  position: absolute;
+  top: 60%; /* Agak ke bawah dari tengah */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8); /* Warna latar belakang lebih gelap */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px 8px rgba(255, 180, 255, 10); /* Sama efek neon */
+  color: white;
+  margin-top: 200px; /* Jarak tambahan ke bawah */
+}
+
+/* Efek blinking untuk kursor | */
+.blink {
+  animation: blink 1s steps(10) infinite;
+}
+
+/* Animasi blinking (kedip) */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Kelas untuk menyembunyikan elemen */
+.hidden {
+  display: none;
+}
+
+/* Gaya untuk gambar dalam popup SweetAlert */
+.sweet-wrapper img {
+  width: 350px;
+  height: 300px;
+  border-radius: 10px;
+  margin: auto;
+}

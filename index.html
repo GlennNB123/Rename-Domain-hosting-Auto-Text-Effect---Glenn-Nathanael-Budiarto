@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Menentukan karakter encoding dan pengaturan viewport responsif -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Judul halaman yang muncul di tab browser -->
+  <title>Rename Domain hosting : Auto Text Effect - Glenn Nathanael Budiarto</title>
+
+  <!-- Favicon/logo kecil di tab -->
+  <link rel="icon" type="image/png" href="https://virtualtour.santa-laurensia.com/wp-content/themes/twentytwenty/page-assets/images/logo-las.png" >
+
+  <!-- Menghubungkan file CSS eksternal untuk styling -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- SweetAlert2 (library popup modern) -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+  <!-- Kontainer teks animasi yang akan diketik otomatis -->
+  <!-- class "hidden" artinya elemen ini disembunyikan dulu di awal -->
+  <main class="tempat-nulis hidden">
+    <p id="Autotext" class="auto-text"></p>
+  </main>
+
+  <!-- Input pengatur kecepatan ketik -->
+  <!-- Juga disembunyikan sampai popup selesai -->
+  <div class="kecepatan hidden">
+    <label for="speedlevel">Speed Level:</label>
+    <input type="number" id="speedlevel" min="1" max="10" value="1" />
+  </div>
+
+  <!-- Menghubungkan JavaScript eksternal yang mengatur logika typing dan popup -->
+  <script src="script.js"></script>
+</body>
+</html>
